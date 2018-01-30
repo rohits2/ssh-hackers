@@ -1,5 +1,5 @@
 
-setup: GeoLite2-City.mmdb
+setup: GeoLite2-City.mmdb pip-requirements
 
 pip-requirements:
 	< requirements.txt | xargs pip3 install -U
