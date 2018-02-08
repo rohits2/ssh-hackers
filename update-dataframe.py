@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-from os import sys
-import os
-sys.path.insert(0, '/usr/local/lib/python3.6')
-sys.path.insert(0, os.path.expanduser('~/lib'))
 
 import re
 import pandas as pd
@@ -73,4 +69,4 @@ df = pd.concat([new_data, df], ignore_index=True)
 df.drop_duplicates(inplace=True)
 
 print("Dumping CSV...")
-df.to_csv("data.csv")
+df.to_csv("data.csv", index=False)
